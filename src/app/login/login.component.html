@@ -1,0 +1,25 @@
+<div id="form-ui">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" id="form">
+    <div id="form-body">
+      <div id="welcome-lines">
+        <div id="welcome-line-1">Spotilike</div>
+        <div id="welcome-line-2">Welcome Back, Loyd</div>
+      </div>
+      <div id="input-area">
+        <div class="form-inp">
+          <input formControlName="email" placeholder="Email Address" type="email">
+        </div>
+        <div class="form-inp">
+          <input formControlName="password" placeholder="Password" type="password">
+        </div>
+      </div>
+      <div id="submit-button-cvr">
+        <button id="submit-button" type="submit" [disabled]="loginForm.invalid">Login</button>
+      </div>
+      <div id="forgot-pass">
+        <a href="#">Forgot password?</a>
+      </div>
+      <div id="bar"></div>
+    </div>
+  </form>
+</div>

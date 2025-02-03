@@ -1,0 +1,70 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-start;  
+  gap: 20px; 
+}
+
+.card {
+  width: 500px; 
+  height: 400px;
+  background: #181818; 
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-left: 20px; /* Ajout de la marge gauche */
+  margin-top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Effet au survol */
+}
+
+.card-img {
+  width: 120px; /* Taille de l'image */
+  height: 120px;
+  border-radius: 8px;
+  background: url('https://via.placeholder.com/120') no-repeat center/cover;
+}
+
+.card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Empile les informations de manière verticale */
+  justify-content: space-between;
+  align-items: flex-start; /* Aligne à gauche */
+  padding-left: 15px;
+}
+
+.card-text .text-title {
+  font-size: 1.3rem; /* Texte plus grand */
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.card-text .text-subtitle {
+  font-size: 1rem;
+  color: #b3b3b3;
+  margin: 5px 0 0;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  background: #1db954; /* Couleur Spotify */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  fill: white;
+  width: 18px;
+  height: 18px;
+}

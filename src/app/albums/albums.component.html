@@ -1,0 +1,23 @@
+<div class="cards-container">
+  <div *ngFor="let album of albumList" class="card">
+    <div class="card-img">
+      <img [src]="album.pouch" alt="album Image">
+
+    </div>
+    <div class="card-info">
+      <div class="card-text">
+        <ul>
+          <li><p class="text-title">artist : {{album.artist_id}}</p></li>
+          <li><p class="text-title">title : {{album.title}}</p></li>
+          <li><p class="text-title">album id : {{album.album_id}}</p></li>
+          <li><p class="text-title">release date : {{album.realease_date}}</p></li>
+        </ul>
+      </div>
+      <div class="card-icon">
+        <svg viewBox="0 0 28 25" class="icon" (click)="viewAlbum(album.album_id)">
+          <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>

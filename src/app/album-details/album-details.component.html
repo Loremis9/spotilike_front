@@ -1,0 +1,24 @@
+
+<div class="middle">
+<div *ngIf="album" class="album-detail">
+  <div class="cards-container">
+    <div>
+      <div class="card-img">
+        <img [src]="album.pouch" alt="album Image">
+  
+      </div>
+      <div class="card-info">
+        <div class="card-text">
+          <ul>
+            <li><p class="text-title">artist : {{album.artist_name}}</p></li>
+            <li><p class="text-title">title : {{album.title}}</p></li>
+            <li><p class="text-title">album id : {{album.album_id}}</p></li>
+            <li><p class="text-title">release date : {{album.realease_date}}</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-song-details *ngIf="album" [album_id]="album.album_id"></app-song-details>
+</div>

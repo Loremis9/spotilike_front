@@ -1,0 +1,20 @@
+<div class="card-container">
+<div class="card" *ngFor="let artist of artists">
+  <div class="card-img">
+    <img [src]="artist.avatar" alt="Album Image">
+  </div>
+  <div class="card-info">
+    <div class="card-text">
+      <ul>
+        <li><p class="text-title">nom de l'artist: {{ artist.artist_name }}</p></li>
+        <li><p class="text-subtitle">biography : {{ artist.biography }}</p></li>
+      </ul>
+    </div>
+    <div class="card-icon">
+      <svg viewBox="0 0 28 25" class="icon" (click)="viewAlbum(artist.artist_id)">
+        <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+</div>

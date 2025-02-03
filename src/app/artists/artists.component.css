@@ -1,0 +1,79 @@
+/* Card container (parent) */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet d'avoir plusieurs cards sur plusieurs lignes */
+  justify-content: flex-start; /* Aligne les cards à gauche */
+  gap: 20px; /* Espacement entre les cards */
+}
+
+/* Card */
+.card {
+  width: 300px; /* Largeur de chaque card */
+  height: 400px; /* Hauteur de chaque card */
+  background: #181818; /* Fond sombre */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column; /* Dispose les éléments en colonne */
+  padding: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Effet au survol */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Image de la card */
+.card-img {
+  width: 100%;
+  height: 200px; /* Taille de l'image */
+  border-radius: 8px;
+  background: url('https://via.placeholder.com/300x200') no-repeat center/cover;
+  margin-bottom: 15px;
+}
+
+/* Informations de la card */
+.card-info {
+  display: flex;
+  flex-direction: column; /* Organise les éléments verticalement */
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+}
+
+/* Texte des titres */
+.card-text .text-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+/* Texte de sous-titres */
+.card-text .text-subtitle {
+  font-size: 1rem;
+  color: #b3b3b3;
+  margin: 5px 0 0;
+}
+
+/* Icône de la card */
+.card-icon {
+  width: 50px;
+  height: 50px;
+  background: #1db954; /* Couleur Spotify */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.icon {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
