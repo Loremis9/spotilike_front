@@ -33,12 +33,12 @@ jobs:
       # 3. Construire l'image Docker
       - name: Build Docker image
         run: |
-          IMAGE_NAME=ghcr.io/loremis9/app
+          IMAGE_NAME=ghcr.io/loremis9/src/app
           docker build -t $IMAGE_NAME:1.0.0 .
 
       # 4. Pousser l'image Docker
       - name: Push Docker image
         run: |
-          IMAGE_NAME=ghcr.io/loremis9/app
+          IMAGE_NAME=ghcr.io/loremis9/src/app
           docker push $IMAGE_NAME:1.0.0
     
